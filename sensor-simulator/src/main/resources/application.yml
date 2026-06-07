@@ -1,0 +1,22 @@
+simulator:
+  target-host: localhost
+  temperature:
+    port: 3344
+    sensor-id: t1
+    base-value: 30.0        # baseline reading
+    spike-value: 40.0       # value sent during spike (exceeds 35°C threshold)
+    interval-seconds: 3     # how often to send a reading
+    spike-every-n: 5        # every Nth reading will be a spike
+  humidity:
+    port: 3355
+    sensor-id: h1
+    base-value: 42.0        # baseline reading
+    spike-value: 65.0       # value sent during spike (exceeds 50% threshold)
+    interval-seconds: 4
+    spike-every-n: 4
+
+logging:
+  level:
+    com.monitoring: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [SIMULATOR] %-5level - %msg%n"

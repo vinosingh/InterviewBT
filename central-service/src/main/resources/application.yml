@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+central-monitoring:
+  thresholds:
+    temperature: 35.0   # degrees Celsius
+    humidity: 50.0      # percentage
+
+logging:
+  level:
+    com.monitoring: DEBUG
+    root: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

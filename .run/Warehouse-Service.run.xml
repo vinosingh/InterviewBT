@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="2. Warehouse Service" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="warehouse-service" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.monitoring.warehouse.WarehouseApplication" />
+    <option name="PROGRAM_PARAMETERS" value="" />
+    <option name="VM_PARAMETERS" value="" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

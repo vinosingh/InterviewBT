@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+warehouse:
+  id: WH-01
+  sensors:
+    temperature:
+      udp-port: 3344
+    humidity:
+      udp-port: 3355
+  central-service:
+    url: http://localhost:8080/api/measurements
+
+logging:
+  level:
+    com.monitoring: DEBUG
+    root: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
